@@ -1,0 +1,47 @@
+# Python-specific files and directories
+# ------------------------------------
+
+# Virtual environment directory
+venv/
+.venv/  # Another common name for virtual environments
+
+# Byte-code files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor/IDE specific files
+.vscode/        # VS Code specific files (e.g., launch.json, settings.json)
+.idea/          # IntelliJ/PyCharm project files
+*.sublime-project
+*.sublime-workspace
+.DS_Store       # macOS specific files
+
+# Environment variables
+# ---------------------
+# This is CRUCIAL for your project as it contains MongoDB connection strings
+.env
+
+# Database specific files (if any local database files were created, though MongoDB is usually remote)
+# --------------------------------------------------------------------------------------------------
+# For MongoDB, this typically isn't needed unless you're running a local single-file DB like SQLite for tests
+# or if MongoDB creates local data files *within* your project directory, which is rare.
+# data/db/ # If you set up MongoDB to store data directly in your project root
+
+# Logs
+# ----
+*.log
+logs/
+
+# Test/Temporary files
+# --------------------
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Build artifacts
+# ---------------
+dist/
+build/
+*.egg-info/
