@@ -7,7 +7,7 @@ This project is a sample e-commerce backend application built with FastAPI and P
 ## Tech Stack
 
 * **Python** (3.10+)
-* **FastAPI**
+* **FastAPI**  
 * **MongoDB** (via Pymongo)
 * **Pydantic**
 * **Uvicorn**
@@ -80,19 +80,19 @@ Access the interactive API documentation (Swagger UI) at:
 
 1.  **Create Products (`POST /api/v1/products`):**
     * Send a product creation request. Copy the `id` from the 201 response.
-    ![Screenshot of POST /api/v1/products request and 201 Created response](assets\Screenshot 2025-07-19 174021.png)
+    ![Screenshot of POST /api/v1/products request and 201 Created response](assets/Screenshot 2025-07-19 174021.png)
 
 2.  **List Products (`GET /api/v1/products`):**
     * Request products without any query parameters to see all.
-    ![Screenshot of GET /api/v1/products request and 200 OK response with data](assets\Screenshot 2025-07-19 175459.png)
+    ![Screenshot of GET /api/v1/products request and 200 OK response with data](assets/Screenshot 2025-07-19 175459.png)
 
 3.  **Create Order (`POST /api/v1/orders`):**
     * Send an order creation request, using the product `id` obtained above.
-    ![Screenshot of POST /api/v1/orders request and 201 Created response](assets\Screenshot 2025-07-19 174155.png)
+    ![Screenshot of POST /api/v1/orders request and 201 Created response](assets/Screenshot 2025-07-19 174155.png)
 
 4.  **Get Orders for a User (`GET /api/v1/orders/{user_id}`):**
     * Request orders using the `userId` provided in the order creation step.
-    ![Screenshot of GET /api/v1/orders/user_Id request and 200 OK response with data](assets\Screenshot 2025-07-19 174429.png)
+    ![Screenshot of GET /api/v1/orders/user_Id request and 200 OK response with data](assets/Screenshot 2025-07-19 174429.png)
 
 ## Judging Criteria
 
